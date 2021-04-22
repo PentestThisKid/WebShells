@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "# WebShell MD5s Jennifer She Bangs; and Likes Mario Bros" > MD5
+find . -name "wild*" ! -empty -type f -exec md5sum {} +|sed 's/.\///g' >> MD5

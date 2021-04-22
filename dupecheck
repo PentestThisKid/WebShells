@@ -1,0 +1,3 @@
+#!/bin/bash
+# Don't upload dupes; the internet is a cruel place.
+find . ! -empty -type f -exec md5sum {} + | sort | uniq -w32 -dD
